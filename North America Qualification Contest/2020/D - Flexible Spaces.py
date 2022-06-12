@@ -1,12 +1,14 @@
 used = [False for _ in range(101)]
-partition = []
 
 w, p = map(int, input().split())    # width, number of partition
+partition = [0 for _ in range(p+1)]
 temp = list(map(int, input().split()))
 
-partition.append(0)
-for elem in temp:
-    partition.append(elem)
+partition[0] = 0
+idx = 1
+for elem in partition:
+    partition[idx] = elem
+    idx += 1
 partition.append(w)
 
 for i in range(p+2):
