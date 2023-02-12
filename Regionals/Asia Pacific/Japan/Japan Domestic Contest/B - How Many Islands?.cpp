@@ -5,7 +5,7 @@ using namespace std;
 typedef pair<int, int> pii;
 int n, m;
 int dy[8] = {-1, 1, 0, 0, 1, -1, 1, -1};
-int dx[8] = {0, 0, -1, 1, 1,-1, -1,1};
+int dx[8] = {0, 0, -1, 1, 1,-1, -1, 1};
 
 bool OOB(int y, int x)
 {
